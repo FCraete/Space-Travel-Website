@@ -1,7 +1,16 @@
-****************
-/* general reset */
-****************
+/* *********************** */
+/* Custom properties   */
+/* *********************** */
 
+:root {
+  --clr-dark: #0b0d17;
+  --clr-light: #d0d6f9;
+  --clr-white: #ffffff;
+}
+
+/* **************** */
+/* general reset */
+/* **************** */
 
 /* Box sizing rules */
 *,
@@ -63,9 +72,9 @@ select {
   }
 }
 
-*****************
+/* ************************ */
 /* Setup utility classes */
-*****************
+/* ************************ */
 
 .flex {
   display: flex;
@@ -93,4 +102,26 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
+}
+
+/* colors */
+
+.bg-dark {
+  background-color: var(--clr-dark);
+}
+.bg-light {
+  background-color: var(--clr-light);
+}
+.bg-white {
+  background-color: var(--clr-white);
+}
+
+.text-dark {
+  color: var(--clr-dark);
+}
+.text-light {
+  color: var(--clr-light);
+}
+.text-white {
+  color: var(--clr-white);
 }
